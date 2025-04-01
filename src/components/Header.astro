@@ -2,15 +2,8 @@
 import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
 ---
-<header class="relative w-full">
-  <div class="absolute inset-0">
-    <img 
-      src="/images/hero-image.png" 
-      alt="Hero image" 
-      class="w-full h-full object-cover"
-    />
-  </div>
-  <nav class="relative z-10">
+<header class="fixed top-0 left-0 w-full z-50">
+  <nav class="relative z-50">
     <Hamburger />
     <Navigation />
   </nav>
