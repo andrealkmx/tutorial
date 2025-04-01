@@ -5,6 +5,10 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 const pageTitle = "Services"
 ---
 <BaseLayout pageTitle={pageTitle}>
+  <div class="flex items-center justify-center gap-4 mb-8">
+    <img src="/images/logo.png" alt="Logo" class="h-12 w-auto" />
+    <h1 class="text-3xl font-bold">Services</h1>
+  </div>
   <p>Aquí es donde publicaré sobre mi viaje de aprendizaje de Astro.</p>
   <ul>
     {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
