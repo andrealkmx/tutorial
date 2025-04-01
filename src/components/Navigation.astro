@@ -1,7 +1,9 @@
 ---
 ---
 <div class="nav-links">
-    <a href="/">Inicio</a>
+    <a href="/" class="logo-link">
+        <img src="/images/logo.png" alt="Home" class="logo-image" />
+    </a>
     <a href="/about/">Services</a>
     <a href="/blog/">Success Stories</a>
     <a href="/tags/">About</a>
@@ -19,5 +21,15 @@
 
   .contact-button:hover {
     background-color: #16a34a;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-image {
+    height: 40px;
+    width: auto;
   }
 </style>
