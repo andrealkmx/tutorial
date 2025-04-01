@@ -1,4 +1,14 @@
 ---
+const pageTitle = "Sobre mi";
+
+const identity = {
+  firstName: "Sarah",
+  country: "Canada",
+  occupation: "Escritor técnico",
+  hobbies: ["fotografia", "observación de aves", "peñarol"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de documentos"];
 ---
 
 <html lang="es">
@@ -7,14 +17,14 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Inicio</a>
     <a href="/about/">Sobre mi</a>
     <a href="/blog/">Blog</a>
 
-    <h1>Sobre mi</h1>
+    <h1>{pageTitle}</h1>
   <h2>... ¡y mi nuevo sitio Astro!</h2>
 
   <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
