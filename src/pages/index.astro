@@ -3,5 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Spark";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>We innovate human-centric strategies for your adoption through OCM.</h2>
+  <div class="relative">
+    <img 
+      src="/images/hero-image.jpg" 
+      alt="Hero image" 
+      class="w-full h-[400px] object-cover"
+    />
+    <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">We innovate human-centric strategies for your adoption through OCM.</h2>
+  </div>
 </BaseLayout>
